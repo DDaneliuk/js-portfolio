@@ -172,6 +172,7 @@ span.bold_text{
 }
 .card{
     width: 100%;
+    height: fit-content;
     border: 2px solid #01dd96;
     padding: 55px 20px;
     margin: 10px 0px;
@@ -214,7 +215,7 @@ span.bold_text{
 }
 /* Contacts */
 .contacts_block{
-    width: 1100px;
+    max-width: 1100px;
     height: 900px;
     display: flex;
     padding: 150px 40px;
@@ -300,6 +301,21 @@ span.bold_text{
         padding:0px 12px;
         font-size: 14px;
     }
+        /* Contacts */
+        .contacts_block{
+            width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px 10px 120px 10px;
+        justify-content: space-between;
+        margin: 0;
+        justify-content: center;
+    }
+    .contact-info{
+        width: 100%;
+        margin: 0 0 70px 0;
+    }
     }
 @media screen and (min-width:480px){
     .nav{
@@ -351,6 +367,21 @@ span.bold_text{
     .project{
         width: 440px;
     }
+    /* Contacts */
+    .contacts_block{
+        width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 150px 40px;
+    justify-content: space-between;
+    margin: 0;
+    justify-content: center;
+}
+.contact-info{
+    width: 450px;
+    margin: 0 0 70px 0;
+}
     }
 @media screen and (min-width:850px){
 .nav{
@@ -410,7 +441,7 @@ span.overline{
     justify-content: space-between;
 }
 .card{
-    width: 345px;
+    width: 385px;
     margin: 30px 0px;
 }
 .projects_cards{
@@ -418,5 +449,14 @@ span.overline{
 }
 .project{
     width: 43%;
+}
+/* Contacts */
+.contacts_block{
+    max-width: 1100px;
+    height: 900px;
+    display: flex;
+    padding: 150px 40px;
+    justify-content: space-between;
+    margin: 0 auto 150px auto;
 }
 }
